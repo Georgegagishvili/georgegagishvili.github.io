@@ -1,0 +1,17 @@
+# Jekyll configuration for GitHub Pages
+include:
+  - .well-known
+
+# Ensure .well-known directory is not ignored
+exclude:
+  - README.md
+  - _config.yml
+  - _headers
+
+# Set the base URL (will be overridden by GitHub Pages)
+baseurl: ""
+url: ""
+
+# Disable Jekyll processing for .well-known directory
+keep_files:
+  - .well-known 

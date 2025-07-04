@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asset Links - Android App Verification</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        .status {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .info-box {
+            background: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .endpoint {
+            background: #e9ecef;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            margin: 10px 0;
+            word-break: break-all;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+        .app-info {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔗 Asset Links Verification</h1>
+        
+        <div class="status">
+            ✅ Asset Links JSON is properly configured and accessible
+        </div>
+
+        <div class="info-box">
+            <h3>What is this?</h3>
+            <p>This GitHub Pages site hosts the <code>assetlinks.json</code> file required for Android App Links verification. This file allows your Android app to handle URLs from your domain.</p>
+        </div>
+
+        <div class="app-info">
+            <h3>📱 App Information</h3>
+            <p><strong>Package Name:</strong> <code>com.noxtton.msquare</code></p>
+            <p><strong>Permission:</strong> <code>delegate_permission/common.handle_all_urls</code></p>
+        </div>
+
+        <div class="info-box">
+            <h3>🔍 Verification Endpoints</h3>
+            <p>Your asset links file is accessible at these URLs:</p>
+            <div class="endpoint">https://[your-username].github.io/assetlinks/.well-known/assetlinks.json</div>
+            <div class="endpoint">https://[your-username].github.io/assetlinks/assetlinks.json</div>
+            
+            <p>Replace <code>[your-username]</code> with your actual GitHub username.</p>
+            <p><strong>Note:</strong> If the first URL returns 404, use the second one as a backup.</p>
+        </div>
+
+        <div class="info-box">
+            <h3>📋 How to Use</h3>
+            <ol>
+                <li>Push this repository to your GitHub account</li>
+                <li>Enable GitHub Pages in your repository settings</li>
+                <li>Set the source to "Deploy from a branch" and select the main branch</li>
+                <li>Your asset links will be available at the endpoint above</li>
+                <li>Configure your Android app to use this URL for App Links verification</li>
+            </ol>
+        </div>
+
+        <div class="footer">
+            <p>This site is automatically generated for Android App Links verification.</p>
+            <p>Last updated: <span id="lastUpdated"></span></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('lastUpdated').textContent = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>
