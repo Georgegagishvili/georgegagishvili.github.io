@@ -1,15 +1,11 @@
 [
-   {
-      "relation":[
-         "delegate_permission/common.handle_all_urls"
-      ],
-      "target":{
-         "namespace":"android_app",
-         "package_name":"com.noxtton.msquare",
-         "sha256_cert_fingerprints":[
-            "DD:30:4A:C6:82:05:F1:24:EF:49:AB:15:0D:46:A9:8A:D3:8C:3C:03:21:00:03:C9:41:61:B4:AB:9E:AF:73:21",
-			"4C:A1:4A:49:AE:70:01:C9:77:41:D4:A5:F0:FC:E7:69:C5:98:F9:F5:9F:BC:A4:24:D3:C5:67:D3:C6:47:EC:33"
-         ]
-      }
-   }
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.cashcow.app",
+      "sha256_cert_fingerprints":
+        ["11:41:94:2E:36:F3:D5:50:47:03:BB:66:EB:A2:CA:41:B6:0D:AA:B5:FB:02:A3:E5:D8:EA:3B:3E:8A:43:96:D0"]
+    }
+  }
 ]
